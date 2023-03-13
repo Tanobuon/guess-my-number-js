@@ -34,8 +34,7 @@ document.querySelector('.check').addEventListener('click', function () {
   } else if (guess !== secretNumber) {
     if (score > 1) {
       displayMessage(guess > secretNumber ? '📈 Too High!' : '📉 Too low');
-      //document.querySelector('.message').textContent =
-      //guess > secretNumber ? '📈 Too High!' : '📉 Too low';
+
       score--;
       document.querySelector('.score').textContent = score;
     } else {
@@ -46,7 +45,7 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 //function for the Again Button
 document.querySelector('.again').addEventListener('click', function () {
-  //reset parameters
+  ////reset parameters
 
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.message').textContent = 'Start guessing...';
