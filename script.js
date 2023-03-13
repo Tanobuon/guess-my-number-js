@@ -1,5 +1,5 @@
 'use strict';
-
+//
 let score = 20;
 let highScore = 0;
 
