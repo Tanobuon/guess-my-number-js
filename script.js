@@ -1,9 +1,9 @@
 'use strict';
 //
-let score = 20;
+let score = 100;
 let highScore = 0;
 
-let secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 100) + 1;
 //
 
 //function for the message query selector
@@ -50,9 +50,9 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.message').textContent = 'Start guessing...';
   document.querySelector('.number').textContent = '?';
-  secretNumber = Math.trunc(Math.random() * 20) + 1;
+  secretNumber = Math.trunc(Math.random() * 100) + 1;
   document.querySelector('.number').style.width = '15rem';
-  score = 20;
+  score = 100;
   document.querySelector('.score').textContent = score;
   document.querySelector('.guess').value = '';
 });
